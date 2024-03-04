@@ -132,7 +132,7 @@ class Transaction:
         if(userId == ''):
           while(userId.strip() == ""):          
             userId = input("Enter Patron Id: ")
-          while(amount.strip() == ""):          
+        while(amount.strip() == ""):      
             amount = input("Enter Amount: ")
         amount = float(amount)
         transactionStrList = ps.getAll('Transaction',userId)
@@ -143,13 +143,16 @@ class Transaction:
             if(transaction['finePaid'] == False and transaction['checkinDate'] != ''):
                 fineDue += float(transaction['fineAmount'])
                 transactionList.append(transaction)
+        if(len(transactionList) == 0):
+           print("Fines Can be Paid once you check in the books!!")
+           return
         transactionList.sort(key=Transaction.sortBy)
         totalFineAmt = 0
         finePaidAmt = amount
         for txn in transactionList:
             totalFineAmt += float(txn['fineAmount'])
             if(amount > 0):
-              if (amount > float(txn['fineAmount'])):
+              if (amount >= float(txn['fineAmount'])):
                 amount -= float(txn['fineAmount'])
                 txn['fineAmount'] = 0
                 txn['finePaid'] = True

@@ -4,3 +4,5 @@ rajesh19044567312024-02-03T18:04:03{"bookId": "1904456731", "userId": "rajesh", 
 suresh15586153422024-03-03T18:04:34{"bookId": "1558615342", "userId": "suresh", "checkoutDate": "2024-03-03T18:04:34", "dueDate": "2024-03-17T18:04:34", "checkinDate": "", "fineAmount": 0, "finePaid": false}
 rajesh186914001X2024-03-03T20:08:05{"bookId": "186914001X", "userId": "rajesh", "checkoutDate": "2024-03-03T20:08:05", "dueDate": "2024-03-17T20:08:05", "checkinDate": "", "fineAmount": 0, "finePaid": false}
 suresh2532111072024-03-03T20:12:04{"bookId": "253211107", "userId": "suresh", "checkoutDate": "2024-03-03T20:12:04", "dueDate": "2024-03-17T20:12:04", "checkinDate": "", "fineAmount": 0, "finePaid": false}
+testPatron19065233712024-01-03T21:57:06{"bookId": "1906523371", "userId": "testPatron", "checkoutDate": "2024-01-03T21:57:06", "dueDate": "2024-01-17T21:57:06", "checkinDate": "2024-03-03T22:16:05", "fineAmount": 0, "finePaid": true}
+test19065233712024-03-03T22:49:21{"bookId": "1906523371", "userId": "test", "checkoutDate": "2024-03-03T22:49:21", "dueDate": "2024-03-17T22:49:21", "checkinDate": "2024-03-03T22:49:55", "fineAmount": 0, "finePaid": false}
